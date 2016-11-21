@@ -1,0 +1,38 @@
+.home-left {
+	width: 500px;
+}
+.home-right {
+	margin-left: 220px;
+}
+.navbar-brand {
+	color: #fff;
+}
+.navbar-brand:hover {
+	color: #fff;
+}
+.logout {
+	color: #fff;
+}
+.logout:hover {
+	color: #fff;
+}
+.logout:link {
+	text-decoration: none;
+}
+.logout:visited {
+	text-decoration: none;
+}
+.logout:hover {
+	text-decoration: none;
+}
+.logout:active {
+	text-decoration: none;
+}
+.logged li {
+	color:  #fff;
+	display: inline;
+	font-size: 15px;
+}
+.navbar-brand {
+	font-size: 20px;
+}

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:mvc="http://www.springframework.org/schema/mvc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+                           http://www.springframework.org/schema/context
+                           http://www.springframework.org/schema/context/spring-context-3.1.xsd
+                           http://www.springframework.org/schema/tx
+                           http://www.springframework.org/schema/tx/spring-tx.xsd
+                           http://www.springframework.org/schema/mvc
+                           http://www.springframework.org/schema/mvc/spring-mvc-3.1.xsd">
+                           
+    <import resource="applicationContext-security.xml" />
+    <mvc:annotation-driven conversion-service="conversionService"/>  
+    <!-- <mvc:annotation-driven/>-->
+    <tx:annotation-driven/>
+    <context:property-placeholder location="/WEB-INF/jdbc.properties" />
+    
+    <context:component-scan base-package="com.jms" >
+        <context:exclude-filter type="annotation"  expression="org.springframework.stereotype.Controller" />
+    </context:component-scan>
+    
+	<bean id="conversionService" class="org.springframework.context.support.ConversionServiceFactoryBean" >
+	    <property name="converters">
+	        <set>
+	            <bean class="com.jms.presentation.utils.StringToLongConverter"/>
+	        </set>
+	    </property>
+	</bean>
+    
+   <bean id="dataSource" class="com.jolbox.bonecp.BoneCPDataSource" destroy-method="close">
+        <property name="driverClass" value="${jdbc.driverClass}"/>
+        <property name="jdbcUrl" value="${jdbc.jdbcUrl}"/>
+        <property name="username" value="${jdbc.userName}"/>
+        <property name="password" value="${jdbc.password}"/>
+        <property name="partitionCount" value="${bonecp.partitionCount}"/>
+        <property name="maxConnectionsPerPartition" value="${bonecp.maxConnectionsPerPartition}"/>
+        <property name="minConnectionsPerPartition" value="${bonecp.minConnectionsPerPartition}"/>
+        <property name="poolAvailabilityThreshold" value="${bonecp.poolAvailabilityThreshold}"/>
+        <property name="acquireIncrement" value="${bonecp.acquireIncrement}"/>
+        <property name="statementsCacheSize" value="${bonecp.statementsCacheSize}"/>
+        <property name="closeConnectionWatch" value="${bonecp.closeConnectionWatch}"/>
+        <property name="logStatementsEnabled" value="${bonecp.logStatementsEnabled}"/>
+    </bean>
+    
+   <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+       <property name="dataSource" ref="dataSource" /> 
+       <property name="configLocation"  value="classpath:/com/jms/infrastructure/persistence/config/mybatis-config.xml" />
+   </bean>
+
+   <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+       <property name="dataSource" ref="dataSource" />
+   </bean>
+
+   <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+       <property name="annotationClass" value="org.springframework.stereotype.Repository"/>
+       <property name="basePackage" value="com.jms"/>
+   </bean>
+
+    <bean id="taskExecutor" class="org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor">
+        <property name="corePoolSize" value="5" />
+        <property name="maxPoolSize" value="10" />
+        <property name="queueCapacity" value="25" />
+    </bean>
+
+    <mvc:annotation-driven validator="validator"/>
+
+    <bean id="validator" class="org.springframework.validation.beanvalidation.LocalValidatorFactoryBean">
+        <property name="providerClass" value="org.hibernate.validator.HibernateValidator"/>
+        <property name="validationMessageSource" ref="messageSource"/>
+    </bean>
+
+    <bean id="messageSource" class="org.springframework.context.support.ReloadableResourceBundleMessageSource">
+        <property name="basenames">
+            <list>
+                <value>messages</value>
+                <value>org/hibernate/validator/ValidationMessages</value>
+            </list>
+        </property>
+        <property name="useCodeAsDefaultMessage" value="false"/>
+        <property name="defaultEncoding" value="UTF-8"/>
+        <property name="cacheSeconds" value="60"/>
+    </bean>
+
+</beans>

@@ -1,0 +1,393 @@
+2016-11-17 09:43:20,834 DEBUG - Returning cached instance of singleton bean 'conversionService'
+2016-11-17 09:43:20,835 DEBUG - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1b30b6f8: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,candidateController,employerController,loginController,positionController,unifiedExceptionResolver,mvcContentNegotiationManager,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0,org.springframework.format.support.FormattingConversionServiceFactoryBean#0,org.springframework.validation.beanvalidation.OptionalValidatorFactoryBean#0,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0,mvcUriComponentsContributor,org.springframework.web.servlet.handler.MappedInterceptor#0,org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0,org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0,org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0,org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping,org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter,org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter,viewResolver,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor,org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@65d23aa3
+2016-11-17 09:43:20,835 DEBUG - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2016-11-17 09:43:20,835 DEBUG - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2016-11-17 09:43:20,835 DEBUG - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2016-11-17 09:43:20,835 DEBUG - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2016-11-17 09:43:20,835 DEBUG - Creating shared instance of singleton bean 'candidateController'
+2016-11-17 09:43:20,835 DEBUG - Creating instance of bean 'candidateController'
+2016-11-17 09:43:20,844 DEBUG - Registered injected element on class [com.jms.presentation.controller.CandidateController]: ResourceElement for private com.jms.service.ICandidateService com.jms.presentation.controller.CandidateController.candidateService
+2016-11-17 09:43:20,844 DEBUG - Registered injected element on class [com.jms.presentation.controller.CandidateController]: ResourceElement for private com.jms.service.IPositionService com.jms.presentation.controller.CandidateController.positionService
+2016-11-17 09:43:20,845 DEBUG - Eagerly caching bean 'candidateController' to allow for resolving potential circular references
+2016-11-17 09:43:20,852 DEBUG - Processing injected method of bean 'candidateController': ResourceElement for private com.jms.service.ICandidateService com.jms.presentation.controller.CandidateController.candidateService
+2016-11-17 09:43:20,854 DEBUG - Returning cached instance of singleton bean 'candidateServiceImpl'
+2016-11-17 09:43:20,854 DEBUG - Processing injected method of bean 'candidateController': ResourceElement for private com.jms.service.IPositionService com.jms.presentation.controller.CandidateController.positionService
+2016-11-17 09:43:20,855 DEBUG - Returning cached instance of singleton bean 'positionServiceImpl'
+2016-11-17 09:43:20,855 DEBUG - Finished creating instance of bean 'candidateController'
+2016-11-17 09:43:20,855 DEBUG - Creating shared instance of singleton bean 'employerController'
+2016-11-17 09:43:20,855 DEBUG - Creating instance of bean 'employerController'
+2016-11-17 09:43:20,856 DEBUG - Registered injected element on class [com.jms.presentation.controller.EmployerController]: ResourceElement for private com.jms.service.IEmployerService com.jms.presentation.controller.EmployerController.employerService
+2016-11-17 09:43:20,856 DEBUG - Registered injected element on class [com.jms.presentation.controller.EmployerController]: ResourceElement for private com.jms.service.IEmployerGroupService com.jms.presentation.controller.EmployerController.employerGroupService
+2016-11-17 09:43:20,857 DEBUG - Eagerly caching bean 'employerController' to allow for resolving potential circular references
+2016-11-17 09:43:20,860 DEBUG - Processing injected method of bean 'employerController': ResourceElement for private com.jms.service.IEmployerService com.jms.presentation.controller.EmployerController.employerService
+2016-11-17 09:43:20,861 DEBUG - Returning cached instance of singleton bean 'employerServiceImpl'
+2016-11-17 09:43:20,861 DEBUG - Processing injected method of bean 'employerController': ResourceElement for private com.jms.service.IEmployerGroupService com.jms.presentation.controller.EmployerController.employerGroupService
+2016-11-17 09:43:20,863 DEBUG - Returning cached instance of singleton bean 'employerGroupServiceImpl'
+2016-11-17 09:43:20,863 DEBUG - Finished creating instance of bean 'employerController'
+2016-11-17 09:43:20,863 DEBUG - Creating shared instance of singleton bean 'loginController'
+2016-11-17 09:43:20,863 DEBUG - Creating instance of bean 'loginController'
+2016-11-17 09:43:20,864 DEBUG - Registered injected element on class [com.jms.presentation.controller.LoginController]: ResourceElement for private com.jms.service.IUserService com.jms.presentation.controller.LoginController.userService
+2016-11-17 09:43:20,866 DEBUG - Registered injected element on class [com.jms.presentation.controller.LoginController]: AutowiredFieldElement for protected org.springframework.security.authentication.AuthenticationManager com.jms.presentation.controller.LoginController.authenticationManager
+2016-11-17 09:43:20,866 DEBUG - Eagerly caching bean 'loginController' to allow for resolving potential circular references
+2016-11-17 09:43:20,868 DEBUG - Processing injected method of bean 'loginController': ResourceElement for private com.jms.service.IUserService com.jms.presentation.controller.LoginController.userService
+2016-11-17 09:43:20,869 DEBUG - Returning cached instance of singleton bean 'userServiceImpl'
+2016-11-17 09:43:20,870 DEBUG - Processing injected method of bean 'loginController': AutowiredFieldElement for protected org.springframework.security.authentication.AuthenticationManager com.jms.presentation.controller.LoginController.authenticationManager
+2016-11-17 09:43:20,871 DEBUG - Returning cached instance of singleton bean 'org.springframework.security.config.authentication.AuthenticationManagerFactoryBean#0'
+2016-11-17 09:43:20,871 DEBUG - Returning cached instance of singleton bean 'org.springframework.security.authentication.ProviderManager#0'
+2016-11-17 09:43:20,872 DEBUG - Returning cached instance of singleton bean 'org.springframework.security.authenticationManager'
+2016-11-17 09:43:20,872 DEBUG - Autowiring by type from bean name 'loginController' to bean named 'org.springframework.security.authenticationManager'
+2016-11-17 09:43:20,872 DEBUG - Finished creating instance of bean 'loginController'
+2016-11-17 09:43:20,872 DEBUG - Creating shared instance of singleton bean 'positionController'
+2016-11-17 09:43:20,872 DEBUG - Creating instance of bean 'positionController'
+2016-11-17 09:43:20,874 DEBUG - Registered injected element on class [com.jms.presentation.controller.PositionController]: ResourceElement for private com.jms.service.IPositionService com.jms.presentation.controller.PositionController.positionService
+2016-11-17 09:43:20,874 DEBUG - Registered injected element on class [com.jms.presentation.controller.PositionController]: ResourceElement for private com.jms.service.IPositionGroupService com.jms.presentation.controller.PositionController.positionGroupService
+2016-11-17 09:43:20,874 DEBUG - Registered injected element on class [com.jms.presentation.controller.PositionController]: ResourceElement for private com.jms.service.ICandidateService com.jms.presentation.controller.PositionController.candidateService
+2016-11-17 09:43:20,875 DEBUG - Eagerly caching bean 'positionController' to allow for resolving potential circular references
+2016-11-17 09:43:20,877 DEBUG - Processing injected method of bean 'positionController': ResourceElement for private com.jms.service.IPositionService com.jms.presentation.controller.PositionController.positionService
+2016-11-17 09:43:20,877 DEBUG - Returning cached instance of singleton bean 'positionServiceImpl'
+2016-11-17 09:43:20,877 DEBUG - Processing injected method of bean 'positionController': ResourceElement for private com.jms.service.IPositionGroupService com.jms.presentation.controller.PositionController.positionGroupService
+2016-11-17 09:43:20,878 DEBUG - Returning cached instance of singleton bean 'positionGroupServiceImpl'
+2016-11-17 09:43:20,878 DEBUG - Processing injected method of bean 'positionController': ResourceElement for private com.jms.service.ICandidateService com.jms.presentation.controller.PositionController.candidateService
+2016-11-17 09:43:20,878 DEBUG - Returning cached instance of singleton bean 'candidateServiceImpl'
+2016-11-17 09:43:20,878 DEBUG - Finished creating instance of bean 'positionController'
+2016-11-17 09:43:20,878 DEBUG - Creating shared instance of singleton bean 'unifiedExceptionResolver'
+2016-11-17 09:43:20,878 DEBUG - Creating instance of bean 'unifiedExceptionResolver'
+2016-11-17 09:43:20,878 DEBUG - Eagerly caching bean 'unifiedExceptionResolver' to allow for resolving potential circular references
+2016-11-17 09:43:20,879 DEBUG - Finished creating instance of bean 'unifiedExceptionResolver'
+2016-11-17 09:43:20,879 DEBUG - Creating shared instance of singleton bean 'mvcContentNegotiationManager'
+2016-11-17 09:43:20,879 DEBUG - Creating instance of bean 'mvcContentNegotiationManager'
+2016-11-17 09:43:20,879 DEBUG - Eagerly caching bean 'mvcContentNegotiationManager' to allow for resolving potential circular references
+2016-11-17 09:43:20,889 DEBUG - Invoking afterPropertiesSet() on bean with name 'mvcContentNegotiationManager'
+2016-11-17 09:43:20,890 DEBUG - Finished creating instance of bean 'mvcContentNegotiationManager'
+2016-11-17 09:43:20,890 DEBUG - Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0'
+2016-11-17 09:43:20,890 DEBUG - Creating instance of bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0'
+2016-11-17 09:43:20,892 DEBUG - Eagerly caching bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0' to allow for resolving potential circular references
+2016-11-17 09:43:20,893 DEBUG - Returning cached instance of singleton bean 'mvcContentNegotiationManager'
+2016-11-17 09:43:20,894 DEBUG - Creating shared instance of singleton bean 'org.springframework.web.servlet.handler.MappedInterceptor#0'
+2016-11-17 09:43:20,894 DEBUG - Creating instance of bean 'org.springframework.web.servlet.handler.MappedInterceptor#0'
+2016-11-17 09:43:20,894 DEBUG - Creating instance of bean '(inner bean)'
+2016-11-17 09:43:20,894 DEBUG - Creating shared instance of singleton bean 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0'
+2016-11-17 09:43:20,894 DEBUG - Creating instance of bean 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0'
+2016-11-17 09:43:20,894 DEBUG - Eagerly caching bean 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0' to allow for resolving potential circular references
+2016-11-17 09:43:20,894 DEBUG - Invoking afterPropertiesSet() on bean with name 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0'
+2016-11-17 09:43:20,895 DEBUG - Finished creating instance of bean 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0'
+2016-11-17 09:43:20,896 DEBUG - Finished creating instance of bean '(inner bean)'
+2016-11-17 09:43:20,897 DEBUG - Eagerly caching bean 'org.springframework.web.servlet.handler.MappedInterceptor#0' to allow for resolving potential circular references
+2016-11-17 09:43:20,897 DEBUG - Finished creating instance of bean 'org.springframework.web.servlet.handler.MappedInterceptor#0'
+2016-11-17 09:43:20,898 DEBUG - Returning cached instance of singleton bean 'org.springframework.web.servlet.handler.MappedInterceptor#0'
+2016-11-17 09:43:20,898 DEBUG - Returning cached instance of singleton bean 'org.springframework.web.servlet.handler.MappedInterceptor#1'
+2016-11-17 09:43:20,898 DEBUG - Invoking afterPropertiesSet() on bean with name 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0'
+2016-11-17 09:43:20,898 DEBUG - Looking for request mappings in application context: WebApplicationContext for namespace 'jms-servlet': startup date [Thu Nov 17 09:43:20 EST 2016]; parent: Root WebApplicationContext
+2016-11-17 09:43:20,916 INFO  - Mapped "{[/positionApply],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.jms.presentation.model.Response com.jms.presentation.controller.CandidateController.positionApply(javax.servlet.http.HttpServletRequest)
+2016-11-17 09:43:20,916 INFO  - Mapped "{[/addOrUpdCandidate],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.jms.presentation.model.Response com.jms.presentation.controller.CandidateController.makeApplication(com.jms.domain.entities.Candidate)
+2016-11-17 09:43:20,917 INFO  - Mapped "{[/getPostionStatusList],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.Map<java.lang.String, java.util.List<com.jms.domain.entities.Application>> com.jms.presentation.controller.CandidateController.getPostionStatusList(javax.servlet.http.HttpServletRequest)
+2016-11-17 09:43:20,917 INFO  - Mapped "{[/position-detail],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.jms.presentation.controller.CandidateController.showPositionDetailInfo(javax.servlet.http.HttpServletRequest)
+2016-11-17 09:43:20,918 INFO  - Mapped "{[/getCandidateInfo],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.jms.presentation.model.Response com.jms.presentation.controller.CandidateController.getAdmincandidateInfoPost(javax.servlet.http.HttpServletRequest)
+2016-11-17 09:43:20,918 INFO  - Mapped "{[/getcandidateInfo],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.jms.presentation.model.Response com.jms.presentation.controller.CandidateController.getAdmincandidateInfo(javax.servlet.http.HttpServletRequest)
+2016-11-17 09:43:20,919 INFO  - Mapped "{[/adminCandidateInfo],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.jms.presentation.controller.CandidateController.handlecandidateObtain(javax.servlet.http.HttpServletRequest)
+2016-11-17 09:43:20,919 INFO  - Mapped "{[/deletecandidate],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.jms.presentation.model.Response com.jms.presentation.controller.CandidateController.handleDeletecandidate(javax.servlet.http.HttpServletRequest)
+2016-11-17 09:43:20,919 INFO  - Mapped "{[/downloadCsv],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public void com.jms.presentation.controller.CandidateController.downloadCsv(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+2016-11-17 09:43:20,920 INFO  - Mapped "{[/getAdmincandidateInfo],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.jms.presentation.controller.CandidateController.showcandidateDetailInfo(javax.servlet.http.HttpServletRequest)
+2016-11-17 09:43:20,920 INFO  - Mapped "{[/candidateNumberValidation],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public boolean com.jms.presentation.controller.CandidateController.candidateNumberValidation(javax.servlet.http.HttpServletRequest)
+2016-11-17 09:43:20,920 INFO  - Mapped "{[/makeEmployer],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.jms.presentation.model.Response com.jms.presentation.controller.EmployerController.makeApplication(com.jms.domain.entities.Employer,org.springframework.validation.BindingResult)
+2016-11-17 09:43:20,921 INFO  - Mapped "{[/employerDetail],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.jms.presentation.controller.EmployerController.showPositionDetailInfo(javax.servlet.http.HttpServletRequest)
+2016-11-17 09:43:20,921 INFO  - Mapped "{[/employer],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.jms.presentation.controller.EmployerController.showEmployerPage()
+2016-11-17 09:43:20,921 INFO  - Mapped "{[/getEmployerGroup],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.List<com.jms.domain.entities.EmployerGroup> com.jms.presentation.controller.EmployerController.handleEmployerGroupObtain(javax.servlet.http.HttpServletRequest)
+2016-11-17 09:43:20,922 INFO  - Mapped "{[/showEmployer],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.Map<java.lang.String, com.jms.domain.entities.Employer> com.jms.presentation.controller.EmployerController.handleEmployerObtain(javax.servlet.http.HttpServletRequest)
+2016-11-17 09:43:20,922 INFO  - Mapped "{[/showAdminEmployer],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.jms.presentation.controller.EmployerController.handlePositionObtain(javax.servlet.http.HttpServletRequest)
+2016-11-17 09:43:20,922 INFO  - Mapped "{[/deleteEmployer],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.jms.presentation.model.Response com.jms.presentation.controller.EmployerController.handleDeleteEmployer(javax.servlet.http.HttpServletRequest)
+2016-11-17 09:43:20,922 INFO  - Mapped "{[/employerNameValidation],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public boolean com.jms.presentation.controller.EmployerController.userNameValidation(javax.servlet.http.HttpServletRequest)
+2016-11-17 09:43:20,923 INFO  - Mapped "{[/home],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.jms.presentation.controller.LoginController.show()
+2016-11-17 09:43:20,923 INFO  - Mapped "{[/userNameValidation],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public boolean com.jms.presentation.controller.LoginController.userNameValidation(javax.servlet.http.HttpServletRequest)
+2016-11-17 09:43:20,923 INFO  - Mapped "{[/makeRegister],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.jms.presentation.model.Response com.jms.presentation.controller.LoginController.handleRegister(com.jms.domain.entities.User,javax.servlet.http.HttpServletRequest)
+2016-11-17 09:43:20,924 INFO  - Mapped "{[/emailValidation],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public boolean com.jms.presentation.controller.LoginController.emailValidation(javax.servlet.http.HttpServletRequest)
+2016-11-17 09:43:20,924 INFO  - Mapped "{[/user-center],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.jms.presentation.controller.LoginController.showUserCenter(javax.servlet.http.HttpServletRequest)
+2016-11-17 09:43:20,924 INFO  - Mapped "{[/login],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.jms.presentation.controller.LoginController.showLoginPage(javax.servlet.http.HttpServletRequest)
+2016-11-17 09:43:20,924 INFO  - Mapped "{[/access-denied],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.jms.presentation.controller.LoginController.handleAccessDenied()
+2016-11-17 09:43:20,924 INFO  - Mapped "{[/login-success],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.jms.presentation.model.Response com.jms.presentation.controller.LoginController.handleLoginSuccessOnPost(javax.servlet.http.HttpServletRequest)
+2016-11-17 09:43:20,924 INFO  - Mapped "{[/login-success],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.jms.presentation.model.Response com.jms.presentation.controller.LoginController.handleLoginSuccess(javax.servlet.http.HttpServletRequest)
+2016-11-17 09:43:20,925 INFO  - Mapped "{[/login-failure],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.jms.presentation.model.Response com.jms.presentation.controller.LoginController.handleLoginFailureOnPost(javax.servlet.http.HttpServletRequest)
+2016-11-17 09:43:20,925 INFO  - Mapped "{[/login-failure],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.jms.presentation.model.Response com.jms.presentation.controller.LoginController.handleLoginFailure(javax.servlet.http.HttpServletRequest)
+2016-11-17 09:43:20,925 INFO  - Mapped "{[/position],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.jms.presentation.controller.PositionController.show()
+2016-11-17 09:43:20,926 INFO  - Mapped "{[/makePosition],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.jms.presentation.controller.PositionController.makeApplication(com.jms.domain.entities.Position) throws java.lang.Exception
+2016-11-17 09:43:20,926 INFO  - Mapped "{[/adminPositionDetail],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.jms.presentation.controller.PositionController.showPositionDetailInfo(javax.servlet.http.HttpServletRequest)
+2016-11-17 09:43:20,926 INFO  - Mapped "{[/showPosition],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.jms.presentation.controller.PositionController.handlePositionObtain(javax.servlet.http.HttpServletRequest)
+2016-11-17 09:43:20,926 INFO  - Mapped "{[/getPositionGroup],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.List<com.jms.domain.entities.PositionGroup> com.jms.presentation.controller.PositionController.handlePositionGroupObtain(javax.servlet.http.HttpServletRequest)
+2016-11-17 09:43:20,926 INFO  - Mapped "{[/deletePosition],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.jms.presentation.model.Response com.jms.presentation.controller.PositionController.handleDeletePosition(javax.servlet.http.HttpServletRequest)
+2016-11-17 09:43:20,926 INFO  - Mapped "{[/updatePosition],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.jms.presentation.model.Response com.jms.presentation.controller.PositionController.updateApplication(com.jms.domain.entities.Position) throws java.lang.Exception
+2016-11-17 09:43:20,927 INFO  - Mapped "{[/canditateDetail],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.jms.presentation.controller.PositionController.showCandidateDetailInfo(javax.servlet.http.HttpServletRequest)
+2016-11-17 09:43:20,927 INFO  - Mapped "{[/getCandidateInfoList],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.jms.presentation.controller.PositionController.getCandidateInfoList(javax.servlet.http.HttpServletRequest)
+2016-11-17 09:43:20,927 INFO  - Mapped "{[/candidate],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.jms.presentation.controller.PositionController.getCandidatesByPositionId(javax.servlet.http.HttpServletRequest)
+2016-11-17 09:43:20,927 INFO  - Mapped "{[/candidateAccept],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public int com.jms.presentation.controller.PositionController.candidateAccept(javax.servlet.http.HttpServletRequest) throws java.lang.Exception
+2016-11-17 09:43:20,927 INFO  - Mapped "{[/candidateReject],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public int com.jms.presentation.controller.PositionController.candidateReject(javax.servlet.http.HttpServletRequest) throws java.lang.Exception
+2016-11-17 09:43:20,928 INFO  - Mapped "{[/deleteApplication],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.jms.presentation.model.Response com.jms.presentation.controller.PositionController.handleDeleteApplication(javax.servlet.http.HttpServletRequest)
+2016-11-17 09:43:20,928 DEBUG - Finished creating instance of bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0'
+2016-11-17 09:43:20,928 DEBUG - Returning cached instance of singleton bean 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0'
+2016-11-17 09:43:20,928 DEBUG - Creating shared instance of singleton bean 'org.springframework.validation.beanvalidation.OptionalValidatorFactoryBean#0'
+2016-11-17 09:43:20,928 DEBUG - Creating instance of bean 'org.springframework.validation.beanvalidation.OptionalValidatorFactoryBean#0'
+2016-11-17 09:43:20,929 DEBUG - Eagerly caching bean 'org.springframework.validation.beanvalidation.OptionalValidatorFactoryBean#0' to allow for resolving potential circular references
+2016-11-17 09:43:20,929 DEBUG - Invoking afterPropertiesSet() on bean with name 'org.springframework.validation.beanvalidation.OptionalValidatorFactoryBean#0'
+2016-11-17 09:43:20,930 DEBUG - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2016-11-17 09:43:20,930 DEBUG - Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2016-11-17 09:43:20,930 DEBUG - Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2016-11-17 09:43:20,931 DEBUG - Setting custom ParameterNameProvider of type com.sun.proxy.$Proxy40
+2016-11-17 09:43:20,931 DEBUG - Trying to load META-INF/validation.xml for XML based Validator configuration.
+2016-11-17 09:43:20,931 DEBUG - No META-INF/validation.xml found. Using annotation based configuration only.
+2016-11-17 09:43:20,932 DEBUG - Finished creating instance of bean 'org.springframework.validation.beanvalidation.OptionalValidatorFactoryBean#0'
+2016-11-17 09:43:20,932 DEBUG - Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0'
+2016-11-17 09:43:20,932 DEBUG - Creating instance of bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0'
+2016-11-17 09:43:20,934 DEBUG - Eagerly caching bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0' to allow for resolving potential circular references
+2016-11-17 09:43:20,935 DEBUG - Returning cached instance of singleton bean 'mvcContentNegotiationManager'
+2016-11-17 09:43:20,936 DEBUG - Creating instance of bean '(inner bean)#1'
+2016-11-17 09:43:20,936 DEBUG - Returning cached instance of singleton bean 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0'
+2016-11-17 09:43:20,936 DEBUG - Returning cached instance of singleton bean 'org.springframework.validation.beanvalidation.OptionalValidatorFactoryBean#0'
+2016-11-17 09:43:20,936 DEBUG - Finished creating instance of bean '(inner bean)#1'
+2016-11-17 09:43:20,936 DEBUG - Creating instance of bean '(inner bean)#2'
+2016-11-17 09:43:20,937 DEBUG - Finished creating instance of bean '(inner bean)#2'
+2016-11-17 09:43:20,937 DEBUG - Creating instance of bean '(inner bean)#3'
+2016-11-17 09:43:20,939 DEBUG - Finished creating instance of bean '(inner bean)#3'
+2016-11-17 09:43:20,939 DEBUG - Creating instance of bean '(inner bean)#4'
+2016-11-17 09:43:20,940 DEBUG - Finished creating instance of bean '(inner bean)#4'
+2016-11-17 09:43:20,940 DEBUG - Creating instance of bean '(inner bean)#5'
+2016-11-17 09:43:20,941 DEBUG - Finished creating instance of bean '(inner bean)#5'
+2016-11-17 09:43:20,941 DEBUG - Creating instance of bean '(inner bean)#6'
+2016-11-17 09:43:20,943 DEBUG - Finished creating instance of bean '(inner bean)#6'
+2016-11-17 09:43:20,943 DEBUG - Creating instance of bean '(inner bean)#7'
+2016-11-17 09:43:20,944 DEBUG - Finished creating instance of bean '(inner bean)#7'
+2016-11-17 09:43:20,944 DEBUG - Creating instance of bean '(inner bean)#8'
+2016-11-17 09:43:20,944 DEBUG - Finished creating instance of bean '(inner bean)#8'
+2016-11-17 09:43:20,952 DEBUG - Invoking afterPropertiesSet() on bean with name 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0'
+2016-11-17 09:43:20,952 DEBUG - Looking for controller advice: WebApplicationContext for namespace 'jms-servlet': startup date [Thu Nov 17 09:43:20 EST 2016]; parent: Root WebApplicationContext
+2016-11-17 09:43:20,953 DEBUG - Finished creating instance of bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0'
+2016-11-17 09:43:20,953 DEBUG - Creating shared instance of singleton bean 'mvcUriComponentsContributor'
+2016-11-17 09:43:20,953 DEBUG - Creating instance of bean 'mvcUriComponentsContributor'
+2016-11-17 09:43:20,953 DEBUG - Eagerly caching bean 'mvcUriComponentsContributor' to allow for resolving potential circular references
+2016-11-17 09:43:20,953 DEBUG - Creating instance of bean '(inner bean)#9'
+2016-11-17 09:43:20,955 DEBUG - Returning cached instance of singleton bean 'mvcContentNegotiationManager'
+2016-11-17 09:43:20,956 DEBUG - Creating instance of bean '(inner bean)#10'
+2016-11-17 09:43:20,956 DEBUG - Returning cached instance of singleton bean 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0'
+2016-11-17 09:43:20,956 DEBUG - Returning cached instance of singleton bean 'org.springframework.validation.beanvalidation.OptionalValidatorFactoryBean#0'
+2016-11-17 09:43:20,956 DEBUG - Finished creating instance of bean '(inner bean)#10'
+2016-11-17 09:43:20,956 DEBUG - Creating instance of bean '(inner bean)#11'
+2016-11-17 09:43:20,957 DEBUG - Finished creating instance of bean '(inner bean)#11'
+2016-11-17 09:43:20,957 DEBUG - Creating instance of bean '(inner bean)#12'
+2016-11-17 09:43:20,959 DEBUG - Finished creating instance of bean '(inner bean)#12'
+2016-11-17 09:43:20,959 DEBUG - Creating instance of bean '(inner bean)#13'
+2016-11-17 09:43:20,960 DEBUG - Finished creating instance of bean '(inner bean)#13'
+2016-11-17 09:43:20,960 DEBUG - Creating instance of bean '(inner bean)#14'
+2016-11-17 09:43:20,962 DEBUG - Finished creating instance of bean '(inner bean)#14'
+2016-11-17 09:43:20,962 DEBUG - Creating instance of bean '(inner bean)#15'
+2016-11-17 09:43:20,964 DEBUG - Finished creating instance of bean '(inner bean)#15'
+2016-11-17 09:43:20,964 DEBUG - Creating instance of bean '(inner bean)#16'
+2016-11-17 09:43:20,965 DEBUG - Finished creating instance of bean '(inner bean)#16'
+2016-11-17 09:43:20,965 DEBUG - Creating instance of bean '(inner bean)#17'
+2016-11-17 09:43:20,966 DEBUG - Finished creating instance of bean '(inner bean)#17'
+2016-11-17 09:43:20,974 DEBUG - Invoking afterPropertiesSet() on bean with name '(inner bean)#9'
+2016-11-17 09:43:20,975 DEBUG - Looking for controller advice: WebApplicationContext for namespace 'jms-servlet': startup date [Thu Nov 17 09:43:20 EST 2016]; parent: Root WebApplicationContext
+2016-11-17 09:43:20,975 DEBUG - Returning eagerly cached instance of singleton bean 'mvcUriComponentsContributor' that is not fully initialized yet - a consequence of a circular reference
+2016-11-17 09:43:20,976 DEBUG - Finished creating instance of bean '(inner bean)#9'
+2016-11-17 09:43:20,976 DEBUG - Returning cached instance of singleton bean 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0'
+2016-11-17 09:43:20,976 DEBUG - Invoking afterPropertiesSet() on bean with name 'mvcUriComponentsContributor'
+2016-11-17 09:43:20,976 DEBUG - Finished creating instance of bean 'mvcUriComponentsContributor'
+2016-11-17 09:43:20,976 DEBUG - Returning cached instance of singleton bean 'org.springframework.web.servlet.handler.MappedInterceptor#0'
+2016-11-17 09:43:20,976 DEBUG - Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0'
+2016-11-17 09:43:20,976 DEBUG - Creating instance of bean 'org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0'
+2016-11-17 09:43:20,978 DEBUG - Eagerly caching bean 'org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0' to allow for resolving potential circular references
+2016-11-17 09:43:20,979 DEBUG - Returning cached instance of singleton bean 'mvcContentNegotiationManager'
+2016-11-17 09:43:20,979 DEBUG - Creating instance of bean '(inner bean)#18'
+2016-11-17 09:43:20,979 DEBUG - Finished creating instance of bean '(inner bean)#18'
+2016-11-17 09:43:20,980 DEBUG - Creating instance of bean '(inner bean)#19'
+2016-11-17 09:43:20,981 DEBUG - Finished creating instance of bean '(inner bean)#19'
+2016-11-17 09:43:20,981 DEBUG - Creating instance of bean '(inner bean)#20'
+2016-11-17 09:43:20,982 DEBUG - Finished creating instance of bean '(inner bean)#20'
+2016-11-17 09:43:20,982 DEBUG - Creating instance of bean '(inner bean)#21'
+2016-11-17 09:43:20,983 DEBUG - Finished creating instance of bean '(inner bean)#21'
+2016-11-17 09:43:20,983 DEBUG - Creating instance of bean '(inner bean)#22'
+2016-11-17 09:43:20,984 DEBUG - Finished creating instance of bean '(inner bean)#22'
+2016-11-17 09:43:20,985 DEBUG - Creating instance of bean '(inner bean)#23'
+2016-11-17 09:43:20,987 DEBUG - Finished creating instance of bean '(inner bean)#23'
+2016-11-17 09:43:20,987 DEBUG - Creating instance of bean '(inner bean)#24'
+2016-11-17 09:43:20,987 DEBUG - Finished creating instance of bean '(inner bean)#24'
+2016-11-17 09:43:20,989 DEBUG - Invoking afterPropertiesSet() on bean with name 'org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0'
+2016-11-17 09:43:20,989 DEBUG - Looking for exception mappings: WebApplicationContext for namespace 'jms-servlet': startup date [Thu Nov 17 09:43:20 EST 2016]; parent: Root WebApplicationContext
+2016-11-17 09:43:20,990 DEBUG - Finished creating instance of bean 'org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0'
+2016-11-17 09:43:20,990 DEBUG - Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0'
+2016-11-17 09:43:20,990 DEBUG - Creating instance of bean 'org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0'
+2016-11-17 09:43:20,990 DEBUG - Eagerly caching bean 'org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0' to allow for resolving potential circular references
+2016-11-17 09:43:20,990 DEBUG - Finished creating instance of bean 'org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0'
+2016-11-17 09:43:20,990 DEBUG - Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0'
+2016-11-17 09:43:20,990 DEBUG - Creating instance of bean 'org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0'
+2016-11-17 09:43:20,991 DEBUG - Eagerly caching bean 'org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0' to allow for resolving potential circular references
+2016-11-17 09:43:20,991 DEBUG - Finished creating instance of bean 'org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0'
+2016-11-17 09:43:20,991 DEBUG - Creating shared instance of singleton bean 'org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping'
+2016-11-17 09:43:20,991 DEBUG - Creating instance of bean 'org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping'
+2016-11-17 09:43:20,991 DEBUG - Eagerly caching bean 'org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping' to allow for resolving potential circular references
+2016-11-17 09:43:20,992 DEBUG - Returning cached instance of singleton bean 'org.springframework.web.servlet.handler.MappedInterceptor#0'
+2016-11-17 09:43:20,992 DEBUG - Returning cached instance of singleton bean 'org.springframework.web.servlet.handler.MappedInterceptor#0'
+2016-11-17 09:43:20,992 DEBUG - Returning cached instance of singleton bean 'org.springframework.web.servlet.handler.MappedInterceptor#1'
+2016-11-17 09:43:20,993 DEBUG - Looking for URL mappings in application context: WebApplicationContext for namespace 'jms-servlet': startup date [Thu Nov 17 09:43:20 EST 2016]; parent: Root WebApplicationContext
+2016-11-17 09:43:20,993 DEBUG - Rejected bean name 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor': no URL paths identified
+2016-11-17 09:43:20,993 DEBUG - Rejected bean name 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor': no URL paths identified
+2016-11-17 09:43:20,993 DEBUG - Rejected bean name 'org.springframework.context.annotation.internalRequiredAnnotationProcessor': no URL paths identified
+2016-11-17 09:43:20,993 DEBUG - Rejected bean name 'org.springframework.context.annotation.internalCommonAnnotationProcessor': no URL paths identified
+2016-11-17 09:43:20,993 DEBUG - Rejected bean name 'candidateController': no URL paths identified
+2016-11-17 09:43:20,993 DEBUG - Rejected bean name 'employerController': no URL paths identified
+2016-11-17 09:43:20,993 DEBUG - Rejected bean name 'loginController': no URL paths identified
+2016-11-17 09:43:20,993 DEBUG - Rejected bean name 'positionController': no URL paths identified
+2016-11-17 09:43:20,993 DEBUG - Rejected bean name 'unifiedExceptionResolver': no URL paths identified
+2016-11-17 09:43:20,993 DEBUG - Rejected bean name 'mvcContentNegotiationManager': no URL paths identified
+2016-11-17 09:43:20,993 DEBUG - Rejected bean name 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0': no URL paths identified
+2016-11-17 09:43:20,993 DEBUG - Rejected bean name 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0': no URL paths identified
+2016-11-17 09:43:20,993 DEBUG - Rejected bean name 'org.springframework.validation.beanvalidation.OptionalValidatorFactoryBean#0': no URL paths identified
+2016-11-17 09:43:20,993 DEBUG - Rejected bean name 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0': no URL paths identified
+2016-11-17 09:43:20,993 DEBUG - Rejected bean name 'mvcUriComponentsContributor': no URL paths identified
+2016-11-17 09:43:20,993 DEBUG - Rejected bean name 'org.springframework.web.servlet.handler.MappedInterceptor#0': no URL paths identified
+2016-11-17 09:43:20,993 DEBUG - Rejected bean name 'org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0': no URL paths identified
+2016-11-17 09:43:20,993 DEBUG - Rejected bean name 'org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0': no URL paths identified
+2016-11-17 09:43:20,993 DEBUG - Rejected bean name 'org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0': no URL paths identified
+2016-11-17 09:43:20,993 DEBUG - Rejected bean name 'org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping': no URL paths identified
+2016-11-17 09:43:20,993 DEBUG - Rejected bean name 'org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter': no URL paths identified
+2016-11-17 09:43:20,993 DEBUG - Rejected bean name 'org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter': no URL paths identified
+2016-11-17 09:43:20,993 DEBUG - Rejected bean name 'viewResolver': no URL paths identified
+2016-11-17 09:43:20,993 DEBUG - Rejected bean name 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor': no URL paths identified
+2016-11-17 09:43:20,993 DEBUG - Rejected bean name 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor': no URL paths identified
+2016-11-17 09:43:20,993 DEBUG - Rejected bean name 'environment': no URL paths identified
+2016-11-17 09:43:20,993 DEBUG - Rejected bean name 'systemProperties': no URL paths identified
+2016-11-17 09:43:20,993 DEBUG - Rejected bean name 'systemEnvironment': no URL paths identified
+2016-11-17 09:43:20,993 DEBUG - Rejected bean name 'servletConfig': no URL paths identified
+2016-11-17 09:43:20,993 DEBUG - Rejected bean name 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importRegistry': no URL paths identified
+2016-11-17 09:43:20,993 DEBUG - Rejected bean name 'messageSource': no URL paths identified
+2016-11-17 09:43:20,993 DEBUG - Rejected bean name 'applicationEventMulticaster': no URL paths identified
+2016-11-17 09:43:20,993 DEBUG - Finished creating instance of bean 'org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping'
+2016-11-17 09:43:20,993 DEBUG - Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter'
+2016-11-17 09:43:20,993 DEBUG - Creating instance of bean 'org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter'
+2016-11-17 09:43:20,994 DEBUG - Eagerly caching bean 'org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter' to allow for resolving potential circular references
+2016-11-17 09:43:20,994 DEBUG - Finished creating instance of bean 'org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter'
+2016-11-17 09:43:20,994 DEBUG - Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter'
+2016-11-17 09:43:20,994 DEBUG - Creating instance of bean 'org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter'
+2016-11-17 09:43:20,994 DEBUG - Eagerly caching bean 'org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter' to allow for resolving potential circular references
+2016-11-17 09:43:20,994 DEBUG - Finished creating instance of bean 'org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter'
+2016-11-17 09:43:20,994 DEBUG - Creating shared instance of singleton bean 'viewResolver'
+2016-11-17 09:43:20,994 DEBUG - Creating instance of bean 'viewResolver'
+2016-11-17 09:43:21,005 DEBUG - Eagerly caching bean 'viewResolver' to allow for resolving potential circular references
+2016-11-17 09:43:21,013 DEBUG - Finished creating instance of bean 'viewResolver'
+2016-11-17 09:43:21,013 DEBUG - Returning cached instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+2016-11-17 09:43:21,013 DEBUG - Returning cached instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
+2016-11-17 09:43:21,014 DEBUG - Unable to locate LifecycleProcessor with name 'lifecycleProcessor': using default [org.springframework.context.support.DefaultLifecycleProcessor@15c3585]
+2016-11-17 09:43:21,014 DEBUG - Returning cached instance of singleton bean 'lifecycleProcessor'
+2016-11-17 09:43:21,014 DEBUG - Unable to locate MultipartResolver with name 'multipartResolver': no multipart request handling provided
+2016-11-17 09:43:21,015 DEBUG - Creating instance of bean 'org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver'
+2016-11-17 09:43:21,018 DEBUG - Finished creating instance of bean 'org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver'
+2016-11-17 09:43:21,018 DEBUG - Unable to locate LocaleResolver with name 'localeResolver': using default [org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver@384f0e32]
+2016-11-17 09:43:21,023 DEBUG - Creating instance of bean 'org.springframework.web.servlet.theme.FixedThemeResolver'
+2016-11-17 09:43:21,032 DEBUG - Finished creating instance of bean 'org.springframework.web.servlet.theme.FixedThemeResolver'
+2016-11-17 09:43:21,032 DEBUG - Unable to locate ThemeResolver with name 'themeResolver': using default [org.springframework.web.servlet.theme.FixedThemeResolver@13731ff4]
+2016-11-17 09:43:21,033 DEBUG - Returning cached instance of singleton bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0'
+2016-11-17 09:43:21,033 DEBUG - Returning cached instance of singleton bean 'org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping'
+2016-11-17 09:43:21,034 DEBUG - Returning cached instance of singleton bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0'
+2016-11-17 09:43:21,034 DEBUG - Returning cached instance of singleton bean 'org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping'
+2016-11-17 09:43:21,034 DEBUG - Returning cached instance of singleton bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#1'
+2016-11-17 09:43:21,034 DEBUG - Returning cached instance of singleton bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0'
+2016-11-17 09:43:21,034 DEBUG - Returning cached instance of singleton bean 'org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter'
+2016-11-17 09:43:21,035 DEBUG - Returning cached instance of singleton bean 'org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter'
+2016-11-17 09:43:21,035 DEBUG - Returning cached instance of singleton bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0'
+2016-11-17 09:43:21,035 DEBUG - Returning cached instance of singleton bean 'org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter'
+2016-11-17 09:43:21,035 DEBUG - Returning cached instance of singleton bean 'org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter'
+2016-11-17 09:43:21,035 DEBUG - Returning cached instance of singleton bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#1'
+2016-11-17 09:43:21,035 DEBUG - Returning cached instance of singleton bean 'unifiedExceptionResolver'
+2016-11-17 09:43:21,035 DEBUG - Returning cached instance of singleton bean 'org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0'
+2016-11-17 09:43:21,035 DEBUG - Returning cached instance of singleton bean 'org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0'
+2016-11-17 09:43:21,035 DEBUG - Returning cached instance of singleton bean 'org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0'
+2016-11-17 09:43:21,036 DEBUG - Returning cached instance of singleton bean 'org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0'
+2016-11-17 09:43:21,036 DEBUG - Returning cached instance of singleton bean 'org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0'
+2016-11-17 09:43:21,036 DEBUG - Returning cached instance of singleton bean 'org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0'
+2016-11-17 09:43:21,036 DEBUG - Returning cached instance of singleton bean 'unifiedExceptionResolver'
+2016-11-17 09:43:21,036 DEBUG - Returning cached instance of singleton bean 'org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#1'
+2016-11-17 09:43:21,036 DEBUG - Returning cached instance of singleton bean 'org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#1'
+2016-11-17 09:43:21,036 DEBUG - Returning cached instance of singleton bean 'org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#1'
+2016-11-17 09:43:21,037 DEBUG - Creating instance of bean 'org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator'
+2016-11-17 09:43:21,041 DEBUG - Finished creating instance of bean 'org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator'
+2016-11-17 09:43:21,041 DEBUG - Unable to locate RequestToViewNameTranslator with name 'viewNameTranslator': using default [org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@630e5010]
+2016-11-17 09:43:21,041 DEBUG - Returning cached instance of singleton bean 'viewResolver'
+2016-11-17 09:43:21,043 DEBUG - Creating instance of bean 'org.springframework.web.servlet.support.SessionFlashMapManager'
+2016-11-17 09:43:21,050 DEBUG - Finished creating instance of bean 'org.springframework.web.servlet.support.SessionFlashMapManager'
+2016-11-17 09:43:21,051 DEBUG - Unable to locate FlashMapManager with name 'flashMapManager': using default [org.springframework.web.servlet.support.SessionFlashMapManager@1e09c0b]
+2016-11-17 09:43:21,051 DEBUG - Searching for key 'spring.liveBeansView.mbeanDomain' in [servletConfigInitParams]
+2016-11-17 09:43:21,051 DEBUG - Searching for key 'spring.liveBeansView.mbeanDomain' in [servletContextInitParams]
+2016-11-17 09:43:21,051 DEBUG - Searching for key 'spring.liveBeansView.mbeanDomain' in [jndiProperties]
+2016-11-17 09:43:21,051 DEBUG - Looking up JNDI object with name [java:comp/env/spring.liveBeansView.mbeanDomain]
+2016-11-17 09:43:21,052 DEBUG - Converted JNDI name [java:comp/env/spring.liveBeansView.mbeanDomain] not found - trying original name [spring.liveBeansView.mbeanDomain]. javax.naming.NameNotFoundException: Name spring.liveBeansView.mbeanDomain is not bound in this Context
+2016-11-17 09:43:21,052 DEBUG - Looking up JNDI object with name [spring.liveBeansView.mbeanDomain]
+2016-11-17 09:43:21,052 DEBUG - JNDI lookup for name [spring.liveBeansView.mbeanDomain] threw NamingException with message: Name spring.liveBeansView.mbeanDomain is not bound in this Context. Returning null.
+2016-11-17 09:43:21,052 DEBUG - Searching for key 'spring.liveBeansView.mbeanDomain' in [systemProperties]
+2016-11-17 09:43:21,052 DEBUG - Searching for key 'spring.liveBeansView.mbeanDomain' in [systemEnvironment]
+2016-11-17 09:43:21,052 DEBUG - Could not find key 'spring.liveBeansView.mbeanDomain' in any property source. Returning [null]
+2016-11-17 09:43:21,052 DEBUG - Published WebApplicationContext of servlet 'jms' as ServletContext attribute with name [org.springframework.web.servlet.FrameworkServlet.CONTEXT.jms]
+2016-11-17 09:43:21,052 INFO  - FrameworkServlet 'jms': initialization completed in 303 ms
+2016-11-17 09:43:21,052 DEBUG - Servlet 'jms' configured successfully
+2016-11-21 15:11:28,079 INFO  - Closing WebApplicationContext for namespace 'jms-servlet': startup date [Thu Nov 17 09:43:20 EST 2016]; parent: Root WebApplicationContext
+2016-11-21 15:11:28,112 DEBUG - Returning cached instance of singleton bean 'org.springframework.security.authentication.event.LoggerListener#0'
+2016-11-21 15:11:28,113 DEBUG - Returning cached instance of singleton bean 'sqlSessionFactory'
+2016-11-21 15:11:28,149 DEBUG - Returning cached instance of singleton bean 'lifecycleProcessor'
+2016-11-21 15:11:28,151 DEBUG - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1b30b6f8: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,candidateController,employerController,loginController,positionController,unifiedExceptionResolver,mvcContentNegotiationManager,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0,org.springframework.format.support.FormattingConversionServiceFactoryBean#0,org.springframework.validation.beanvalidation.OptionalValidatorFactoryBean#0,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0,mvcUriComponentsContributor,org.springframework.web.servlet.handler.MappedInterceptor#0,org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0,org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0,org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0,org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping,org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter,org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter,viewResolver,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor,org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@65d23aa3
+2016-11-21 15:11:28,160 DEBUG - Retrieved dependent beans for bean '(inner bean)#18': [org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0]
+2016-11-21 15:11:28,162 DEBUG - Retrieved dependent beans for bean '(inner bean)#9': [mvcUriComponentsContributor]
+2016-11-21 15:11:28,163 DEBUG - Retrieved dependent beans for bean '(inner bean)#10': [(inner bean)#9]
+2016-11-21 15:11:28,163 DEBUG - Retrieved dependent beans for bean '(inner bean)#1': [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0]
+2016-11-21 15:11:28,165 DEBUG - Invoking destroy() on bean with name 'org.springframework.validation.beanvalidation.OptionalValidatorFactoryBean#0'
+2016-11-21 15:11:28,169 DEBUG - Retrieved dependent beans for bean '(inner bean)': [org.springframework.web.servlet.handler.MappedInterceptor#0]
+2016-11-21 15:11:28,199 INFO  - Closing Root WebApplicationContext: startup date [Thu Nov 17 09:43:16 EST 2016]; root of context hierarchy
+2016-11-21 15:11:28,216 DEBUG - Returning cached instance of singleton bean 'lifecycleProcessor'
+2016-11-21 15:11:28,217 DEBUG - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@65d23aa3: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.security.filterChains,org.springframework.security.filterChainProxy,org.springframework.security.web.DefaultSecurityFilterChain#0,org.springframework.security.web.DefaultSecurityFilterChain#1,org.springframework.security.web.DefaultSecurityFilterChain#2,org.springframework.security.web.DefaultSecurityFilterChain#3,org.springframework.security.web.DefaultSecurityFilterChain#4,org.springframework.security.web.DefaultSecurityFilterChain#5,org.springframework.security.web.DefaultSecurityFilterChain#6,org.springframework.security.web.DefaultSecurityFilterChain#7,org.springframework.security.web.DefaultSecurityFilterChain#8,org.springframework.security.web.DefaultSecurityFilterChain#9,org.springframework.security.web.PortMapperImpl#0,org.springframework.security.web.PortResolverImpl#0,org.springframework.security.config.authentication.AuthenticationManagerFactoryBean#0,org.springframework.security.authentication.ProviderManager#0,org.springframework.security.web.context.HttpSessionSecurityContextRepository#0,org.springframework.security.web.authentication.session.CompositeSessionAuthenticationStrategy#0,org.springframework.security.web.savedrequest.HttpSessionRequestCache#0,org.springframework.security.access.vote.AffirmativeBased#0,org.springframework.security.web.access.intercept.FilterSecurityInterceptor#0,org.springframework.security.web.access.DefaultWebInvocationPrivilegeEvaluator#0,org.springframework.security.authentication.AnonymousAuthenticationProvider#0,org.springframework.security.web.authentication.rememberme.PersistentTokenBasedRememberMeServices#0,org.springframework.security.authentication.RememberMeAuthenticationProvider#0,org.springframework.security.web.authentication.www.BasicAuthenticationEntryPoint#0,org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter#0,org.springframework.security.userDetailsServiceFactory,org.springframework.security.web.DefaultSecurityFilterChain#10,org.springframework.security.authentication.dao.DaoAuthenticationProvider#0,org.springframework.security.authentication.DefaultAuthenticationEventPublisher#0,org.springframework.security.authenticationManager,userDetailsManager,loginFilter,tokenRepository,userDetailsService,rememberMeServices,org.springframework.security.authentication.event.LoggerListener#0,passwordEncoder,webexpressionHandler,mvcContentNegotiationManager,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0,org.springframework.validation.beanvalidation.OptionalValidatorFactoryBean#0,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0,mvcUriComponentsContributor,org.springframework.web.servlet.handler.MappedInterceptor#0,org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0,org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0,org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0,org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping,org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter,org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,unifiedExceptionResolver,candidateServiceImpl,employerGroupServiceImpl,employerServiceImpl,positionGroupServiceImpl,positionServiceImpl,userServiceImpl,conversionService,dataSource,sqlSessionFactory,transactionManager,org.mybatis.spring.mapper.MapperScannerConfigurer#0,taskExecutor,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#1,org.springframework.format.support.FormattingConversionServiceFactoryBean#0,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#1,org.springframework.web.servlet.handler.MappedInterceptor#1,org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#1,org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#1,org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#1,validator,messageSource,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor,org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor,applicationRepository,candidateRepository,educationRepository,employerGroupRepository,employerRepository,positionGroupRepository,positionRepository,userRepository,workRepository]; root of factory hierarchy
+2016-11-21 15:11:28,227 DEBUG - Retrieved dependent beans for bean '(inner bean)#100': [org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#1]
+2016-11-21 15:11:28,232 DEBUG - Retrieved dependent beans for bean '(inner bean)#92': [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#1]
+2016-11-21 15:11:28,234 DEBUG - Invoking destroy() on bean with name 'taskExecutor'
+2016-11-21 15:11:28,235 INFO  - Shutting down ExecutorService 'taskExecutor'
+2016-11-21 15:11:28,239 DEBUG - Retrieved dependent beans for bean '(inner bean)#85': [org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0]
+2016-11-21 15:11:28,241 DEBUG - Retrieved dependent beans for bean '(inner bean)#76': [mvcUriComponentsContributor]
+2016-11-21 15:11:28,241 DEBUG - Retrieved dependent beans for bean '(inner bean)#77': [(inner bean)#76]
+2016-11-21 15:11:28,242 DEBUG - Invoking destroy() on bean with name 'validator'
+2016-11-21 15:11:28,246 DEBUG - Retrieved dependent beans for bean '(inner bean)#68': [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0]
+2016-11-21 15:11:28,247 DEBUG - Invoking destroy() on bean with name 'org.springframework.validation.beanvalidation.OptionalValidatorFactoryBean#0'
+2016-11-21 15:11:28,248 DEBUG - Retrieved dependent beans for bean '(inner bean)#67': [org.springframework.web.servlet.handler.MappedInterceptor#1]
+2016-11-21 15:11:28,248 DEBUG - Retrieved dependent beans for bean '(inner bean)#66': [org.springframework.web.servlet.handler.MappedInterceptor#0]
+2016-11-21 15:11:28,248 DEBUG - Invoking destroy() on bean with name 'org.springframework.security.filterChainProxy'
+2016-11-21 15:11:28,249 DEBUG - Retrieved dependent beans for bean '(inner bean)#65': [org.springframework.security.filterChainProxy]
+2016-11-21 15:11:28,249 DEBUG - Invoking destroy() on bean with name 'org.springframework.security.filterChains'
+2016-11-21 15:11:28,249 DEBUG - Retrieved dependent beans for bean '(inner bean)#10': [org.springframework.security.web.DefaultSecurityFilterChain#10]
+2016-11-21 15:11:28,249 DEBUG - Invoking destroy() on bean with name '(inner bean)#11'
+2016-11-21 15:11:28,249 DEBUG - Invoking destroy() on bean with name '(inner bean)#12'
+2016-11-21 15:11:28,250 DEBUG - Retrieved dependent beans for bean '(inner bean)#13': [(inner bean)#12]
+2016-11-21 15:11:28,250 DEBUG - Invoking destroy() on bean with name '(inner bean)#23'
+2016-11-21 15:11:28,250 DEBUG - Invoking destroy() on bean with name '(inner bean)#24'
+2016-11-21 15:11:28,250 DEBUG - Invoking destroy() on bean with name '(inner bean)#25'
+2016-11-21 15:11:28,250 DEBUG - Retrieved dependent beans for bean '(inner bean)#26': [(inner bean)#25]
+2016-11-21 15:11:28,250 DEBUG - Invoking destroy() on bean with name '(inner bean)#28'
+2016-11-21 15:11:28,251 DEBUG - Invoking destroy() on bean with name '(inner bean)#29'
+2016-11-21 15:11:28,251 DEBUG - Invoking destroy() on bean with name '(inner bean)#30'
+2016-11-21 15:11:28,251 DEBUG - Retrieved dependent beans for bean '(inner bean)#31': [(inner bean)#30]
+2016-11-21 15:11:28,251 DEBUG - Invoking destroy() on bean with name '(inner bean)#33'
+2016-11-21 15:11:28,251 DEBUG - Retrieved dependent beans for bean '(inner bean)#34': [(inner bean)#33]
+2016-11-21 15:11:28,251 DEBUG - Retrieved dependent beans for bean '(inner bean)#38': [org.springframework.security.web.access.intercept.FilterSecurityInterceptor#0]
+2016-11-21 15:11:28,251 DEBUG - Retrieved dependent beans for bean '(inner bean)#39': [(inner bean)#38]
+2016-11-21 15:11:28,252 DEBUG - Retrieved dependent beans for bean '(inner bean)#36': [org.springframework.security.access.vote.AffirmativeBased#0]
+2016-11-21 15:11:28,253 DEBUG - Invoking destroy() on bean with name 'org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter#0'
+2016-11-21 15:11:28,254 DEBUG - Retrieved dependent beans for bean '(inner bean)#18': [org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter#0]
+2016-11-21 15:11:28,255 DEBUG - Retrieved dependent beans for bean '(inner bean)#22': [org.springframework.security.authentication.ProviderManager#0]
+2016-11-21 15:11:28,259 DEBUG - Retrieved dependent beans for bean '(inner bean)#20': [org.springframework.security.web.authentication.session.CompositeSessionAuthenticationStrategy#0]
+2016-11-21 15:11:28,260 DEBUG - Invoking destroy() on bean with name 'loginFilter'
+2016-11-21 15:11:28,260 DEBUG - Retrieved dependent beans for bean 'org.springframework.security.web.authentication.SavedRequestAwareAuthenticationSuccessHandler#19d3f6ad': [loginFilter]
+2016-11-21 15:11:28,262 DEBUG - Retrieved dependent beans for bean '(inner bean)#17': [org.springframework.security.authentication.dao.DaoAuthenticationProvider#0]
+2016-11-21 15:11:28,263 DEBUG - Retrieved dependent beans for bean '(inner bean)#14': [org.springframework.security.web.authentication.rememberme.PersistentTokenBasedRememberMeServices#0]
+2016-11-21 15:11:28,263 DEBUG - Invoking destroy method 'close' on bean with name 'dataSource'
+2016-11-21 15:11:28,263 DEBUG - Retrieved dependent beans for bean '(inner bean)#9': [org.springframework.security.web.DefaultSecurityFilterChain#9]
+2016-11-21 15:11:28,263 DEBUG - Retrieved dependent beans for bean '(inner bean)#8': [org.springframework.security.web.DefaultSecurityFilterChain#8]
+2016-11-21 15:11:28,264 DEBUG - Retrieved dependent beans for bean '(inner bean)#7': [org.springframework.security.web.DefaultSecurityFilterChain#7]
+2016-11-21 15:11:28,264 DEBUG - Retrieved dependent beans for bean '(inner bean)#6': [org.springframework.security.web.DefaultSecurityFilterChain#6]
+2016-11-21 15:11:28,265 DEBUG - Retrieved dependent beans for bean '(inner bean)#5': [org.springframework.security.web.DefaultSecurityFilterChain#5]
+2016-11-21 15:11:28,266 DEBUG - Retrieved dependent beans for bean '(inner bean)#4': [org.springframework.security.web.DefaultSecurityFilterChain#4]
+2016-11-21 15:11:28,266 DEBUG - Retrieved dependent beans for bean '(inner bean)#3': [org.springframework.security.web.DefaultSecurityFilterChain#3]
+2016-11-21 15:11:28,266 DEBUG - Retrieved dependent beans for bean '(inner bean)#2': [org.springframework.security.web.DefaultSecurityFilterChain#2]
+2016-11-21 15:11:28,267 DEBUG - Retrieved dependent beans for bean '(inner bean)#1': [org.springframework.security.web.DefaultSecurityFilterChain#1]
+2016-11-21 15:11:28,267 DEBUG - Retrieved dependent beans for bean '(inner bean)': [org.springframework.security.web.DefaultSecurityFilterChain#0]
+2016-11-21 15:11:28,267 DEBUG - Retrieved dependent beans for bean 'com.jms.presentation.utils.StringToLongConverter#1bd59b82': [conversionService]
